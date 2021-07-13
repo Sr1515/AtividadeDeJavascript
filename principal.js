@@ -48,4 +48,36 @@ for (var i = 0; i < alunos.length; i++) {
     }
 }
 
+var botao = document.querySelector("#bt");
+botao.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    var form = document.querySelector("#form-alunos");
+    var nome = form.nome.value;
+    var nota1 = form.n1.value;
+    var nota2 = form.n2.value;
+    var nota3 = form.n3.value;
+
+    var alunoTr = document.createElement("tr");
+
+    var nomeTd = document.createElement("td");
+    var n1Td = document.createElement("td");
+    var n2Td = document.createElement("td");
+    var n3Td = document.createElement("td");
+    var mediaTd = document.createElement("td");
+    var situaTd = document.createElement("td");
+
+    nomeTd.textContent = nome;
+    n1Td.textContent = nota1;
+    n2Td.textContent = nota2;
+    n3Td.textContent = nota3;
+
+    alunoTr.appendChild(nomeTd);
+    alunoTr.appendChild(n1Td);
+    alunoTr.appendChild(n2Td);
+    alunoTr.appendChild(n3Td);
+
+    var tabela = document.querySelector("#tabela-alunos");
+    tabela.appendChild(alunoTr);
+})
 
