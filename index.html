@@ -5,7 +5,6 @@
     <div class="topo"></div>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title> Início - JGR</title>
     <link href="estilo.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -30,16 +29,55 @@
                     <th>Situação</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>João Victor</td>
+            <tbody id="tabela-alunos">
+                <tr id="aluno_01" class="alunos">
+                    <td class="info-nome">João Victor</td>
+                    <td class="info-n1">100</td>
+                    <td class="info-n2">90</td>
+                    <td class="info-n3">100</td>
+                    <td class="info-med"></td>
+                    <td class="info-situ"></td>
+                </tr>
+                <tr id="aluno_02" class="alunos">
+                    <td class="info-nome">João Victor</td>
+                    <td class="info-n1">80</td>
+                    <td class="info-n2">90</td>
+                    <td class="info-n3">70</td>
+                    <td class="info-med"></td>
+                    <td class="info-situ"></td>
                 </tr>
             </tbody>
         </table>
     </main>
+    <section class="box">
+        <h2 class="titulos"> Adicionar novos alunos</h2>
+        <form>
+            <div id="nome">
+                <label for="nome">Nome </label>
+                <input id="nome" name="nome" type="text" placeholder="Digite o nome do aluno">
+            </div><br>
+            <div id="n1">
+                <label for="n1">1° Nota </label>
+                <input id="n1" name="n1" type="text" placeholder="Digite a primeira nota">
+            </div><br>
+            <div id="n2">
+                <label for="n2">2° Nota </label>
+                <input id="n2" name="n2" type="text" placeholder="Digite a primeira nota">
+            </div><br>
+            <div id="n3">
+                <label for="n3">3° Nota </label>
+                <input id="n3" name="n3" type="text" placeholder="Digite a primeira nota">
+            </div><br>
+            <div class="button">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
     <footer>
         <img src="imagens/footer.png">
     </footer>
+    <script type="text/javascript" src="principal.js">
+    </script>
 </body>
 
 </html>
