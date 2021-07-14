@@ -1,20 +1,19 @@
 var alunos = document.querySelectorAll(".alunos");
-console.log(alunos);
 
 for (var i = 0; i < alunos.length; i++) {
 	var aluno = alunos[i];
 	console.log(i);
 
 	var tdNota1 = aluno.querySelector(".info-n1");
-	var n1 = tdNota1.textContent;
+	var n1 = parseFloat(tdNota1.textContent);
 	console.log(n1);
 
 	var tdNota2 = aluno.querySelector(".info-n2");
-	var n2 = tdNota2.textContent;
+	var n2 = parseFloat(tdNota2.textContent);
 	console.log(n2);
 
 	var tdNota3 = aluno.querySelector(".info-n3");
-	var n3 = tdNota3.textContent;
+	var n3 = parseFloat(tdNota3.textContent);
 	console.log(n3);
 
 	var n1Valido = true;
@@ -54,5 +53,5 @@ for (var i = 0; i < alunos.length; i++) {
 
 function calculamedia(n1, n2, n3) {
 	let media = (n1 + n2 + n3) / 3;
-	return media.toFixed(2);
+	return media.toFixed(1);
 }

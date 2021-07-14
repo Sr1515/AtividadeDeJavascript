@@ -84,7 +84,8 @@ label {
 	display: inline-block;
     width: 90px;
     text-align: right;
-	font-style:;
+	
+
 }
 
 .button {
@@ -111,6 +112,12 @@ label {
 	background-color: #964b00;
 	color: darkorange;
 	text-decoration: underline;
+}
+
+
+.animacao {
+	opacity: 0;
+	transition: 1s;
 }
 
 
