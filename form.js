@@ -17,9 +17,9 @@ botao.addEventListener("click", function (event) {
 function obtemAlunoDoForm(form) {
 	var aluno = {
 		nome: form.nome.value,
-		nota1: form.n1.value,
-		nota2: form.n2.value,
-		nota3: form.n3.value,
+		nota1: checaValido(form.n1.value),
+		nota2: checaValido(form.n2.value),
+		nota3: checaValido(form.n3.value),
 		media: calculamedia(
 			parseFloat(form.n1.value),
 			parseFloat(form.n2.value),

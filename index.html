@@ -22,9 +22,9 @@
             <thead>
                 <tr>
                     <th>Nome do Aluno</th>
-                    <th>Nota 1</th>
-                    <th>Nota 2</th>
-                    <th>Nota 3</th>
+                    <th>1° Nota</th>
+                    <th>2° Nota</th>
+                    <th>3° Nota</th>
                     <th>Média Semestral</th>
                     <th>Situação</th>
                 </tr>
@@ -49,23 +49,29 @@
             </tbody>
         </table>
     </main>
+
+    <section class="fil">
+        <label for="filtrar-tabela">Filtrar: </label>
+        <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do aluno">
+    </section>
+
     <section class="box">
         <h2 class="titulos"> Adicionar novos alunos</h2>
         <form id="form-alunos">
             <div id="nome">
-                <label for="nome">Nome </label>
+                <label for="nome">Nome: </label>
                 <input id="nome" name="nome" type="text" placeholder="Digite o nome do aluno">
             </div><br>
             <div id="n1">
-                <label for="n1">1° Nota </label>
+                <label for="n1">1° Nota: </label>
                 <input id="n1" name="n1" type="text" placeholder="Digite a primeira nota">
             </div><br>
             <div id="n2">
-                <label for="n2">2° Nota </label>
+                <label for="n2">2° Nota: </label>
                 <input id="n2" name="n2" type="text" placeholder="Digite a primeira nota">
             </div><br>
             <div id="n3">
-                <label for="n3">3° Nota </label>
+                <label for="n3">3° Nota: </label>
                 <input id="n3" name="n3" type="text" placeholder="Digite a primeira nota">
             </div><br>
             <div class="button" id="botao">
@@ -79,6 +85,7 @@
     <script type="text/javascript" src="calculamedia.js"></script>
     <script type=" text/javascript" src="form.js"></script>
     <script type=" text/javascript" src="removerele.js"></script>
+    <script type=" text/javascript" src="filtrar.js"></script>
 </body>
 
 </html>
