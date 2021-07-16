@@ -128,27 +128,25 @@ label {
 	display: none;
 }
 
-
-.fil input {
-	position: absolute;
-	top: 384px;
-	right: 1250px;
-	width: 400px;
-	height: 30px;
-	border: 2px solid black;
-	padding-left: 20px;
-	border-radius: 1em;
-	
-	
+.fil {
+	padding-left: 80px;
 }
-	
+
 .fil label {
-	position: absolute;
-	top: 385px;
-	right: 1675px;
 	font-size: 25px;
 	text-align: center;
 }
+
+.fil input {
+	height: 30px;
+	width: 300px;
+	display: inline-block;
+	border: 2px solid black;
+	padding-left: 20px;
+	border-radius: 1em;
+}
+
+
 
 #space {
 	padding-top: 100px;
