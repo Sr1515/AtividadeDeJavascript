@@ -144,7 +144,7 @@ label {
 	
 .fil label {
 	position: absolute;
-	top: 380px;
+	top: 385px;
 	right: 1675px;
 	font-size: 25px;
 	text-align: center;
@@ -152,6 +152,20 @@ label {
 
 #space {
 	padding-top: 100px;
+}
+
+.h3 {
+	position: absolute;
+	top: 1170px;
+	right: 1240px;
+}
+
+.aviso label {
+	position: absolute;
+	top: 550px;
+	right: 1205px;
+	font-size: 20px;
+	text-align: center;
 }
 
 footer img {

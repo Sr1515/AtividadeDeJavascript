@@ -41,6 +41,23 @@ for (var i = 0; i < alunos.length; i++) {
 
 		var tdMedia_semestral = aluno.querySelector(".info-med");
 		tdMedia_semestral.textContent = media;
+
+		var situacaoF = aluno.querySelector(".info-situ");
+		situacaoF.textContent = situacao(media);
+
+	}
+}
+
+
+function situacao(media) {
+	if (media >= 70) {
+		return "Aprovado"
+	}
+	if (media < 40) {
+		return "Reprovado"
+	}
+	if (media > 40 || media < 70) {
+		return "Prova Final"
 	}
 }
 
@@ -62,3 +79,4 @@ function calculamedia(n1, n2, n3) {
 		return media;
 	}
 }
+

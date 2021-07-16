@@ -23,8 +23,14 @@ function obtemAlunoDoForm(form) {
 		media: calculamedia(
 			parseFloat(form.n1.value),
 			parseFloat(form.n2.value),
-			parseFloat(form.n3.value)
+			parseFloat(form.n3.value),
 		),
+		situ: situacao(calculamedia(
+			parseFloat(form.n1.value),
+			parseFloat(form.n2.value),
+			parseFloat(form.n3.value),
+		)),
+
 	};
 
 	return aluno;
@@ -47,6 +53,7 @@ function montaTr(aluno) {
 	alunoTr.appendChild(montaTd(aluno.nota2, "info-n2"));
 	alunoTr.appendChild(montaTd(aluno.nota3, "info-n3"));
 	alunoTr.appendChild(montaTd(aluno.media, "info-med"));
+	alunoTr.appendChild(montaTd(aluno.situ, "info-situ"));
 
 	return alunoTr;
 }
